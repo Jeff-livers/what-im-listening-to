@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add a Song</title>
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto Mono', monospace;
+      font-size: 16px;
+      background: #ffffff;
+      color: #000000;
+    }
+
+    .page {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 64px 40px 100px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 400;
+      margin-bottom: 40px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      border: 2px solid #000000;
+      border-radius: 6px;
+      padding: 10px 14px;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 15px;
+      margin-bottom: 24px;
+    }
+
+    button {
+      border: 2px solid #000;
+      background: #2BCEBE;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 16px;
+      padding: 12px 40px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    #output {
+      margin-top: 40px;
+      display: none;
+    }
+
+    #output p {
+      margin-bottom: 12px;
+    }
+
+    #output pre {
+      background: #f4f4f4;
+      border: 2px solid #000;
+      border-radius: 6px;
+      padding: 16px;
+      white-space: pre-wrap;
+      word-break: break-all;
+      font-size: 14px;
+    }
+
+    #copy-btn {
+      margin-top: 16px;
+      background: #ffffff;
+    }
+
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="page">
+    <h1>Add a Song</h1>
+
+    <label for="title">Song title</label>
+    <input id="title" type="text" placeholder="Stormy Night" />
+
+    <label for="artist">Artist</label>
+    <input id="artist" type="text" placeholder="Roland Burrell" />
+
+    <label for="cover">Image filename (in Images/ folder)</label>
+    <input id="cover" type="text" placeholder="Stormy Night - Roland Burrell.jpeg" />
+
+    <label for="link">Spotify link</label>
+    <input id="link" type="text" placeholder="https://open.spotify.com/track/..." />
+
+    <button onclick="generate()">Generate JSON</button>
+
+    <div id="output">
+      <p>Paste this at the <strong>bottom</strong> of the array in <code>albums.json</code>:</p>
+      <pre id="json-output"></pre>
+      <button id="copy-btn" onclick="copyJSON()">Copy</button>
+    </div>
+  </div>
+
+  <script>
+    function generate() {
+      const title = document.getElementById('title').value.trim();
+      const artist = document.getElementById('artist').value.trim();
+      const cover = 'Images/' + document.getElementById('cover').value.trim().replace(/^[Ii]mages\//, '');
+      const link = document.getElementById('link').value.trim();
+
+      const obj = { title, artist, cover, link };
+      document.getElementById('json-output').textContent = JSON.stringify(obj, null, 2);
+      document.getElementById('output').style.display = 'block';
+    }
+
+    function copyJSON() {
+      const text = document.getElementById('json-output').textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        document.getElementById('copy-btn').textContent = 'Copied!';
+        setTimeout(() => document.getElementById('copy-btn').textContent = 'Copy', 2000);
+      });
+    }
+  </script>
+
+</body>
+</html>

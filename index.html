@@ -61,7 +61,7 @@
       width: 180px;
       height: 180px;
       object-fit: cover;
-      border: 4px solid #ffffff;
+      border: 4px solid #000000;
       border-radius: 14px;
       display: block;
     }
@@ -143,9 +143,15 @@
       .then(res => res.json())
       .then(albums => {
         const container = document.getElementById('cards');
-        albums.reverse().forEach(album => {
+        const colors = ['#2BCEBF', '#FFDA3E', '#FF00EB'];
+        const lightText = ['#FF00EB'];
+        albums.reverse().forEach((album, i) => {
+          const bg = colors[i % colors.length];
+          const textColor = lightText.includes(bg) ? '#ffffff' : '#000000';
           const card = document.createElement('div');
           card.className = 'card';
+          card.style.background = bg;
+          card.style.color = textColor;
           card.innerHTML = `
             <div class="card-art">
               <img src="${album.cover}" alt="${album.title}" />
