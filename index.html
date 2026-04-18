@@ -104,18 +104,28 @@
 
       .card {
         grid-template-columns: 1fr;
-        text-align: center;
+        text-align: left;
         max-height: none;
+        padding: 20px;
       }
 
       .card-art img {
         width: 100%;
         height: auto;
         aspect-ratio: 1 / 1;
+        border-radius: 14px;
+      }
+
+      .card-title {
+        font-size: 22px;
+      }
+
+      .card-artist {
+        font-size: 16px;
       }
 
       .card-listen {
-        align-self: center;
+        align-self: flex-start;
       }
     }
 
