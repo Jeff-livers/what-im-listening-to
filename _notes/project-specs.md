@@ -33,7 +33,7 @@ Fill out every answer below. Once complete, hand this doc to Claude Code and it 
    > 40px regular
 
 8. **Artist name** — font size? Same as album title, smaller, italic?
-   > light italic 2px
+   > light italic 20px
 
 9. **Font color** (all text, or specify per element)?
    > black
