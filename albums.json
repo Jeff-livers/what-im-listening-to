@@ -76,5 +76,29 @@
   "artist": "The Marias",
   "cover": "Images/Little by Little - The Marias.png",
   "link": "https://open.spotify.com/track/3EzlgdxyFvjeAGzR5WxHB8?si=5c051759c1694310"
+  },
+  {
+  "title": "Morning Bells",
+  "artist": "Hether",
+  "cover": "Images/Morning Bells - Hether.png",
+  "link": "https://open.spotify.com/track/0MVEDOCqM2LFrou8xwl1e8"
+  },
+  {
+  "title": "Come On Baby, Scrape My Data",
+  "artist": "Machine Girl",
+  "cover": "Images/Come On Baby, Scrape My Data - Machine Girl.jpeg",
+  "link": "https://open.spotify.com/track/1H5qvPXWhirAz0hJpC2thu"
+  },
+  {
+  "title": "Mio Amore",
+  "artist": "The Flamingos",
+  "cover": "Images/Mio Amore - The Flamingos.jpeg",
+  "link": "https://open.spotify.com/track/2biPaOxz8M2BJZOaEa9qNH"
+  },
+  {
+  "title": "Rhodos",
+  "artist": "Ultraflex",
+  "cover": "Images/Rhodos - Ultraflex.jpg",
+  "link": "https://open.spotify.com/track/0uKQZPQ6Slt2T6QOBCocp5?si=12463166d0e04557"
   }
 ]
