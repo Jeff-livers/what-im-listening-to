@@ -100,5 +100,41 @@
   "artist": "Ultraflex",
   "cover": "Images/Rhodos - Ultraflex.jpg",
   "link": "https://open.spotify.com/track/0uKQZPQ6Slt2T6QOBCocp5?si=12463166d0e04557"
+  },
+  {
+  "title": "Smooth Operator",
+  "artist": "Sade",
+  "cover": "Images/Smooth Operator - Sade.jpeg",
+  "link": "https://open.spotify.com/track/1Hv1VTm8zeOeybub15mA2R"
+  },
+  {
+  "title": "Estrangers",
+  "artist": "No Vacation",
+  "cover": "Images/Estrangers - No Vacation.jpeg",
+  "link": "https://open.spotify.com/track/6WGhBQvC1ocDzUA60S4hUH?si=557d0d6800f54a45"
+  },
+  {
+  "title": "Dub City",
+  "artist": "DELACOUR",
+  "cover": "Images/Dub City - DELACOUR.jpeg",
+  "link": "https://open.spotify.com/track/0T5v3EhX5uj82nu8cakMMw?si=622766dcf1444e08"
+  },
+  {
+  "title": "Bounce House",
+  "artist": "Gelli Haha",
+  "cover": "Images/Bounce House - Gelli Haha.jpeg",
+  "link": "https://open.spotify.com/track/6WTAM3OQpBxEpMeGHQjmU2?si=ae283b7fda2b40a0"
+  },
+  {
+  "title": "Superheavy, Supercritical",
+  "artist": "King Gizzard and the Lizard Wizard",
+  "cover": "Images/Superheavy, Supercritical - KGLW.jpg",
+  "link": "https://kinggizzard.bandcamp.com/track/superheavy-supercritical"
+  },
+  {
+  "title": "Young Hearts Run Free",
+  "artist": "Candi Staton",
+  "cover": "Images/Young Hearts Run Free - Candi Staton.jpeg",
+  "link": "https://open.spotify.com/track/3MFa9idQuY4iJLWsZl3tIQ?si=2d3cb99216674b01"
   }
 ]
